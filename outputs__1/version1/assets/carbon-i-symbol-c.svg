@@ -1,0 +1,8 @@
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CARBON-i symbol</title>
+  <desc id="desc">Minimal circular C symbol with carbon-market signal line</desc>
+  <path d="M27.8 8.7A12.25 12.25 0 1 0 27.8 29.3" stroke="#253597" stroke-width="2.9" stroke-linecap="round"/>
+  <path d="M25.2 13.2A7.4 7.4 0 1 0 25.2 24.8" stroke="#253597" stroke-width="2.9" stroke-linecap="round"/>
+  <path d="M27.65 19H13.35" stroke="#253597" stroke-width="2.9" stroke-linecap="round"/>
+  <circle cx="32.2" cy="12.1" r="3.2" fill="#27B7C9"/>
+</svg>

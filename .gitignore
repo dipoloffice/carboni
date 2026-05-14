@@ -1,0 +1,10 @@
+.codex__1/
+outputs__1/ppt_extract/
+outputs__1/review-screenshots/
+outputs__1/carbon-i-landing-drafts/
+outputs__1/*server*.log
+*.pptx
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
