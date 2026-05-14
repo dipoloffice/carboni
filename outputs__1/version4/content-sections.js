@@ -20,7 +20,7 @@ document.querySelectorAll("[data-copy-slider]").forEach((card) => {
 
   function showCopy(nextIndex) {
     index = (nextIndex + dots.length) % dots.length;
-    if (track) track.style.transform = `translateX(-${index * 33.3333}%)`;
+    if (track) track.style.transform = `translateX(calc(-${index * 100}% - ${index * 24}px))`;
     dots.forEach((dot, dotIndex) => dot.classList.toggle("is-active", dotIndex === index));
   }
 
