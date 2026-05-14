@@ -265,49 +265,65 @@
             <p>카본아이에서 전하는 배출권거래제의 모든 것</p>
           </div>
           <div class="news-layout">
-            <div class="news-board" data-news-tabs>
-              <div class="news-tabs" role="tablist" aria-label="뉴스 탭">
-                <button class="is-active" type="button" data-news-tab="0">데이터</button>
-                <button type="button" data-news-tab="1">전망</button>
-                <button type="button" data-news-tab="2">보고서</button>
-                <button type="button" data-news-tab="3">정책·알림</button>
-              </div>
-              <div class="news-list is-active" data-news-panel="0">
-                <a href="#"><span>KRX</span><strong>2026년 5월 배출권 유상할당 경매 결과</strong><time>2026.05.13</time></a>
-                <a href="#"><span>NGMS</span><strong>추가할당 제출 기한 알림</strong><time>2026.05.30</time></a>
-                <a href="#"><span>ETRS</span><strong>3월 배출권 및 외부사업 인증실적 거래정보</strong><time>2026.05.30</time></a>
-                <a href="#"><span>KAU</span><strong>최근 30일 KAU25 가격·거래량 요약</strong><time>2026.05.14</time></a>
-                <a href="#"><span>EUA</span><strong>EU ETS 가격 변동성 확대 구간 점검</strong><time>2026.05.12</time></a>
-              </div>
-              <div class="news-list" data-news-panel="1">
-                <a href="#"><span>월간</span><strong>[Carbon-i Monthly] 배출권 시장 전망</strong><time>2026.04.30</time></a>
-                <a href="#"><span>주간</span><strong>[Carbon-i Comment] 4/20~4/24</strong><time>2026.04.24</time></a>
-                <a href="#"><span>EU</span><strong>[Carbon-i EU Monthly] 2026년 3월호</strong><time>2026.04.10</time></a>
-                <a href="#"><span>전망</span><strong>제4차 계획기간 가격 민감도 시나리오</strong><time>2026.04.02</time></a>
-              </div>
-              <div class="news-list" data-news-panel="2">
-                <a href="#"><span>세미나</span><strong>대한상의, 정부와 산업계 간담회 개최</strong><time>2026.05.08</time></a>
-                <a href="#"><span>리포트</span><strong>글로벌 탄소시장 핵심 이슈 브리프</strong><time>2026.04.21</time></a>
-                <a href="#"><span>자료</span><strong>배출권 운용 실무 가이드 업데이트</strong><time>2026.04.12</time></a>
-                <a href="#"><span>분석</span><strong>국내외 감축 크레딧 활용 동향</strong><time>2026.03.28</time></a>
-              </div>
-              <div class="news-list" data-news-panel="3">
-                <a href="#"><span>법령</span><strong>온실가스 배출권의 할당 및 거래에 관한 법률</strong><time>2026.04.29</time></a>
-                <a href="#"><span>지침</span><strong>위탁거래 시행 관련 주요 확인사항</strong><time>2025.11.24</time></a>
-                <a href="#"><span>정책</span><strong>배출권거래제 제도 개선 동향</strong><time>2025.10.28</time></a>
-                <a href="#"><span>공시</span><strong>기후공시 대응을 위한 배출권 데이터 체크리스트</strong><time>2025.10.02</time></a>
-              </div>
-              <div class="news-insight-panel">
-                <span>오늘의 체크포인트</span>
-                <strong>할당·거래·정책 알림을 한 화면에서 확인하고, 담당 업무별로 필요한 항목만 빠르게 추적하세요.</strong>
-                <p>시장 데이터 5건 · 정책 알림 3건 · 신규 리포트 2건</p>
-              </div>
+            <div class="news-report-stack">
+              <section class="news-report-panel" aria-label="동향 및 전망 보고서">
+                <div class="news-report-tabs">
+                  <button class="is-active" type="button">동향 보고서</button>
+                  <button type="button">전망 보고서</button>
+                  <a href="#" aria-label="동향 및 전망 보고서 더보기">›</a>
+                </div>
+                <div class="news-report-list">
+                  <a href="#"><span class="news-report-label">NGMS</span><span class="news-report-title">추가할당 제출 기한 알림</span><time>2026.05.30</time></a>
+                  <a class="is-highlight" href="#"><span class="news-report-label">KRX</span><strong class="news-report-title">2026년 5월 배출권 유상할당 경매 결과</strong><time>2026.05.13</time></a>
+                  <a href="#"><span class="news-report-label">ETRS</span><span class="news-report-title">[2026년 3월] 배출권 및 외부사업 인증실적 거래정보</span><time>2026.05.30</time></a>
+                  <a href="#"><span class="news-report-label">세미나</span><span class="news-report-title">대한상의, 정부와 산업계 간담회 개최</span><time>2026.05.08</time></a>
+                </div>
+              </section>
+
+              <section class="news-report-panel" aria-label="캘린더 및 보도자료">
+                <div class="news-report-tabs">
+                  <button class="is-active" type="button">캘린더</button>
+                  <button type="button">보도자료</button>
+                  <a href="#" aria-label="캘린더 및 보도자료 더보기">›</a>
+                </div>
+                <div class="news-report-list">
+                  <a href="#"><span class="news-report-label">국내 월간 보고서</span><span class="news-report-title">[Carbon-i Monthly] 카본아이 배출권 시장 전망</span><time>2026.04.30</time></a>
+                  <a class="is-highlight" href="#"><span class="news-report-label">주간 보고서</span><strong class="news-report-title">[Carbon-i Comment] 4/20~4/24</strong><time>2026.04.24</time></a>
+                  <a href="#"><span class="news-report-label">주간 보고서</span><span class="news-report-title">[Carbon-i Comment] 4/13~4/17</span><time>2026.04.17</time></a>
+                  <a href="#"><span class="news-report-label">해외 월간 보고서</span><span class="news-report-title">[Carbon-i EU Monthly] 2026년 3월호</span><time>2026.04.10</time></a>
+                </div>
+              </section>
             </div>
+
             <div class="feature-news-grid">
-              <article class="feature-news-card"><img src="./assets/thumb-onair.png" alt="" /><div><p>카본아이 온에어</p><h3>배출권 거래제란?</h3><time>2026-09-01</time><strong>*무료이용자 시청 가능</strong></div></article>
-              <article class="feature-news-card"><img src="./assets/thumb-event.png" alt="" /><div><p>행사 정보</p><h3>탄소포럼 2026 개최</h3><time>2026-10-08</time><strong>신청기한: 2026-09-10~2026-09-30</strong></div></article>
-              <article class="feature-news-card"><img src="./assets/thumb-law.png" alt="" /><div><p>법령/지침</p><h3>배출권 할당 및 거래 법률 시행</h3><time>2026. 4. 29</time><strong>법률 제21071호 일부개정</strong></div></article>
-              <article class="feature-news-card"><img src="./assets/thumb-policy.png" alt="" /><div><p>정책 바로알기</p><h3>위탁거래에 대해 들어봤을까?</h3><time>2025-11-24</time><strong>위탁거래 주요 안내</strong></div></article>
+              <article class="feature-news-card feature-news-card--onair">
+                <div class="feature-media">
+                  <img src="./assets/thumb-onair.png" alt="" />
+                  <p>카본아이 온에어</p>
+                </div>
+                <div><h3>배출권 거래제란?</h3><time>2026-09-01</time><strong>*무료이용자 시청 가능</strong></div>
+              </article>
+              <article class="feature-news-card feature-news-card--event">
+                <div class="feature-media">
+                  <img src="./assets/thumb-event.png" alt="" />
+                  <p>행사 정보</p>
+                </div>
+                <div><h3>탄소포럼 2026 개최</h3><time>2026-10-08</time><strong>신청기한: 2026-09-10~2026-09-30</strong></div>
+              </article>
+              <article class="feature-news-card feature-news-card--law">
+                <div class="feature-media">
+                  <img src="./assets/thumb-law.png" alt="" />
+                  <p>법령/지침</p>
+                </div>
+                <div><h3>배출권 할당 및 거래 법률 시행</h3><time>2026. 4. 29</time><strong>법률 제21071호 일부개정</strong></div>
+              </article>
+              <article class="feature-news-card feature-news-card--policy">
+                <div class="feature-media">
+                  <img src="./assets/thumb-policy.png" alt="" />
+                  <p>정책 바로알기</p>
+                </div>
+                <div><h3>위탁거래에 대해 들어봤을까?</h3><time>2025-11-24</time><strong>위탁거래 주요 안내</strong></div>
+              </article>
             </div>
           </div>
         </div>
@@ -330,7 +346,12 @@
           <div class="service-card-grid">
             <article class="service-card service-card--blue" data-copy-slider>
               <img src="./assets/service-eu-ets.png" alt="" />
-              <div class="service-card-head"><span>01</span><h3>EU-ETS</h3></div>
+              <div class="service-card-head">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 1 0 0 17.6 8.8 8.8 0 0 0 0-17.6Zm0 0c2.2 2.1 3.3 5 3.3 8.8s-1.1 6.7-3.3 8.8M12 3.2C9.8 5.3 8.7 8.2 8.7 12s1.1 6.7 3.3 8.8M4 12h16M5.7 7.3h12.6M5.7 16.7h12.6" /></svg>
+                </span>
+                <h3>EU-ETS</h3>
+              </div>
               <div class="service-copy-window">
                 <div class="service-copy-track">
                   <p>유럽 탄소배출권(EUA) 규제·정책 분석 및 기업 맞춤형 대응 전략 제공</p>
@@ -342,7 +363,12 @@
             </article>
             <article class="service-card service-card--teal" data-copy-slider>
               <img src="./assets/service-international.png" alt="" />
-              <div class="service-card-head"><span>02</span><h3>국제감축사업</h3></div>
+              <div class="service-card-head">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 15.5c3.4-1.2 6-.9 8 1 2-2.8 4.7-4.6 8-5.4M6.2 9.6c1.8-2.6 4.2-3.9 7.1-4 1.3 1.5 1.8 3.2 1.5 5.1-2 .3-3.8 0-5.4-.9M12 16.5v4" /></svg>
+                </span>
+                <h3>국제감축사업</h3>
+              </div>
               <div class="service-copy-window">
                 <div class="service-copy-track">
                   <p>파리협정 6조 기반 국제감축사업 구조부터 참여 방식까지 핵심 제도 정보 제공</p>
@@ -354,7 +380,12 @@
             </article>
             <article class="service-card service-card--navy" data-copy-slider>
               <img src="./assets/service-asset.png" alt="" />
-              <div class="service-card-head"><span>03</span><h3>탄소자산운용</h3></div>
+              <div class="service-card-head">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 19h16M7 16V9M12 16V5M17 16v-4M5 11l7-7 7 7" /></svg>
+                </span>
+                <h3>탄소자산운용</h3>
+              </div>
               <div class="service-copy-window">
                 <div class="service-copy-track">
                   <p>배출량 관리부터 할당 최적화·배출권 거래 전략 수립까지 기업 맞춤 플랫폼</p>
@@ -366,7 +397,12 @@
             </article>
             <article class="service-card service-card--purple" data-copy-slider>
               <img src="./assets/service-reduction.png" alt="" />
-              <div class="service-card-head"><span>04</span><h3>감축전략수립</h3></div>
+              <div class="service-card-head">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 20v-8M12 12c-4.2-.2-6.8-2.3-7.7-6.5 4.1.1 6.7 2.3 7.7 6.5Zm0 0c4.3-.2 7-2.4 8-6.5-4.2.1-6.9 2.3-8 6.5Z" /></svg>
+                </span>
+                <h3>감축전략수립</h3>
+              </div>
               <div class="service-copy-window">
                 <div class="service-copy-track">
                   <p>기후 시나리오 기반의 최적 온실가스 감축 경로 정의 및 목표 수립 지원</p>
@@ -378,6 +414,23 @@
             </article>
           </div>
         </div>
+        <footer class="service-footer" aria-label="회사 정보">
+          <div class="service-footer-inner">
+            <a class="service-footer-brand" href="#" aria-label="CARBON-i">
+              <img src="./assets/carbon-i-logo-light.svg" alt="CARBON-i" />
+            </a>
+            <div class="service-footer-info">
+              <p><strong>주식회사 에코아이</strong><span>대표: 현성완</span><span>주소: 서울특별시 영등포구 여의나루로 61 11층</span></p>
+              <p><span>Tel: 02-6480-7341</span><span>Fax: 02-6480-7398</span><span>사업자등록번호: 314-81-73570</span><span>이메일: carbon-i@ecoeye.com</span></p>
+              <p class="service-footer-copy">COPYRIGHT 2015 @ CARBON-i. ALL RIGHTS RESERVED.</p>
+            </div>
+            <nav class="service-footer-links" aria-label="푸터 링크">
+              <a href="#">이용약관</a>
+              <a href="#">개인정보보호정책</a>
+              <a href="#">이메일무단수집거부</a>
+            </nav>
+          </div>
+        </footer>
       </section>
     </main>
 

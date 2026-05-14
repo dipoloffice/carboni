@@ -573,3 +573,225 @@
   padding-top: calc(var(--header-h, 76px) + clamp(18px, 3vh, 34px));
   box-sizing: border-box;
 }
+
+.service-section {
+  --service-footer-h: 88px;
+}
+
+.service-inner {
+  height: calc(100svh - var(--service-footer-h)) !important;
+  min-height: calc(100svh - var(--service-footer-h)) !important;
+  padding-top: calc(var(--header-h, 76px) + clamp(12px, 2.2vh, 24px)) !important;
+  padding-bottom: clamp(18px, 3vh, 28px) !important;
+}
+
+.service-card {
+  min-height: 430px;
+}
+
+.service-copy-window {
+  min-height: 128px;
+  padding-top: 24px;
+}
+
+.service-card-head {
+  min-height: 80px;
+}
+
+.service-footer {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 2;
+  min-height: var(--service-footer-h);
+  border-top: 1px solid rgba(7, 26, 45, 0.09);
+  color: #071a2d;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.service-footer-inner {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+  width: min(var(--container, 1440px), calc(100% - 80px));
+  min-height: var(--service-footer-h);
+  margin: 0 auto;
+}
+
+.service-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.service-footer-brand img {
+  display: block;
+  width: 168px;
+  height: auto;
+  opacity: 0.74;
+  filter: grayscale(1);
+}
+
+.service-footer-info {
+  display: grid;
+  gap: 4px;
+  color: rgba(7, 26, 45, 0.55);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.service-footer-info p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 14px;
+  margin: 0;
+}
+
+.service-footer-info strong {
+  color: rgba(7, 26, 45, 0.72);
+  font-weight: 800;
+}
+
+.service-footer-copy {
+  color: rgba(7, 26, 45, 0.42);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.service-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 16px;
+  color: rgba(7, 26, 45, 0.54);
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.service-footer-links a {
+  color: inherit;
+}
+
+@media (max-height: 820px) and (min-width: 761px) {
+  .service-section {
+    --service-footer-h: 60px;
+  }
+
+  .service-footer {
+    bottom: 1px;
+  }
+
+  .service-inner {
+    height: calc(100svh - var(--service-footer-h)) !important;
+    min-height: calc(100svh - var(--service-footer-h)) !important;
+    padding-top: calc(var(--header-h, 76px) + 10px) !important;
+    padding-bottom: 12px !important;
+  }
+
+  .service-inner .section-title-block {
+    margin-bottom: 14px;
+  }
+
+  .service-inner .section-title-block h2 {
+    font-size: 40px;
+  }
+
+  .service-inner .section-title-block > p:not(.section-kicker) {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+
+  .service-card {
+    min-height: 0;
+  }
+
+  .service-card > img {
+    aspect-ratio: 16 / 6.4;
+  }
+
+  .service-card-head {
+    min-height: 60px;
+  }
+
+  .service-card-head h3 {
+    font-size: 22px;
+  }
+
+  .service-copy-window {
+    min-height: 80px;
+    padding-top: 16px;
+  }
+
+  .service-copy-track p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .service-dots {
+    padding: 6px 0 10px;
+  }
+
+  .service-footer-inner {
+    gap: 18px;
+  }
+
+  .service-footer-brand img {
+    width: 138px;
+  }
+
+  .service-footer-info {
+    gap: 2px;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .service-footer-copy,
+  .service-footer-links {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .service-footer-inner {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
+
+  .service-footer-links {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .service-inner {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 24px 0 54px !important;
+  }
+
+  .service-footer {
+    position: relative;
+    inset: auto;
+  }
+
+  .service-footer-inner {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 12px;
+    width: calc(100% - 32px);
+    padding: 22px 0;
+  }
+
+  .service-footer-brand img {
+    width: 154px;
+  }
+
+  .service-footer-links {
+    grid-column: auto;
+    justify-content: flex-start;
+    white-space: normal;
+  }
+}
