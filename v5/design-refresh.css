@@ -1,0 +1,962 @@
+﻿:root {
+  --color-primary: #24358f;
+  --color-primary-nav: #1f4f8f;
+  --color-primary-link: #1f55c8;
+  --color-text-default: #151719;
+  --color-text-secondary: #4f5560;
+  --color-text-muted: #717783;
+  --color-status-up: #b83218;
+  --color-status-down: #1f55c8;
+  --color-button-inactive: #f4f6f8;
+  --section-bg: #f7f9fc;
+  --card-border: rgba(21, 23, 25, 0.1);
+  --card-shadow: 0 18px 44px rgba(22, 39, 71, 0.08);
+  --card-radius: 10px;
+  --container: 1360px;
+  --header-h: 84px;
+  --theme-accent: var(--color-primary-link);
+  --theme-accent-soft: rgba(31, 85, 200, 0.16);
+  --theme-surface: var(--section-bg);
+  --theme-hero-tint: rgba(31, 85, 200, 0.18);
+  --theme-bg-user-opacity: 0.30;
+  --theme-section-bg-opacity: 0.12;
+  --theme-bg-opacity: 0.5;
+  --theme-service-bg-opacity: 0.54;
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-carbon-navy {
+  --color-primary: #24358f;
+  --color-primary-nav: #1f4f8f;
+  --color-primary-link: #1f55c8;
+  --color-status-down: #1f55c8;
+  --theme-accent: #1f55c8;
+  --theme-accent-soft: rgba(31, 85, 200, 0.16);
+  --theme-surface: #f7f9fc;
+  --theme-hero-tint: rgba(31, 85, 200, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-eco-emerald {
+  --color-primary: #0f6b4f;
+  --color-primary-nav: #0d5d55;
+  --color-primary-link: #14a36f;
+  --color-status-down: #0f766e;
+  --theme-accent: #35b886;
+  --theme-accent-soft: rgba(53, 184, 134, 0.18);
+  --theme-surface: #f4faf7;
+  --theme-hero-tint: rgba(53, 184, 134, 0.2);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-data-blue {
+  --color-primary: #123f88;
+  --color-primary-nav: #0e4f8f;
+  --color-primary-link: #0094ff;
+  --color-status-down: #0077d9;
+  --theme-accent: #00a3ff;
+  --theme-accent-soft: rgba(0, 163, 255, 0.18);
+  --theme-surface: #f3f8ff;
+  --theme-hero-tint: rgba(0, 163, 255, 0.22);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-graphite-gold {
+  --color-primary: #2b2f38;
+  --color-primary-nav: #3d434f;
+  --color-primary-link: #b88422;
+  --color-status-down: #6d7380;
+  --theme-accent: #c79a3b;
+  --theme-accent-soft: rgba(199, 154, 59, 0.2);
+  --theme-surface: #f7f5ef;
+  --theme-hero-tint: rgba(199, 154, 59, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-clean-teal {
+  --color-primary: #0f766e;
+  --color-primary-nav: #0f5f6c;
+  --color-primary-link: #14b8a6;
+  --color-status-down: #0f766e;
+  --theme-accent: #5eead4;
+  --theme-accent-soft: rgba(20, 184, 166, 0.16);
+  --theme-surface: #f7fbfb;
+  --theme-hero-tint: rgba(20, 184, 166, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-institutional-blue {
+  --color-primary: #0b2f5f;
+  --color-primary-nav: #16406f;
+  --color-primary-link: #256fca;
+  --color-status-down: #256fca;
+  --theme-accent: #2f80ed;
+  --theme-accent-soft: rgba(47, 128, 237, 0.16);
+  --theme-surface: #f5f8fc;
+  --theme-hero-tint: rgba(47, 128, 237, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-climate-slate {
+  --color-primary: #263241;
+  --color-primary-nav: #345162;
+  --color-primary-link: #3b8290;
+  --color-status-down: #3b8290;
+  --theme-accent: #5f9ea0;
+  --theme-accent-soft: rgba(95, 158, 160, 0.17);
+  --theme-surface: #f4f7f8;
+  --theme-hero-tint: rgba(95, 158, 160, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-forest-graphite {
+  --color-primary: #16382c;
+  --color-primary-nav: #24503e;
+  --color-primary-link: #357f54;
+  --color-status-down: #357f54;
+  --theme-accent: #5aa06f;
+  --theme-accent-soft: rgba(90, 160, 111, 0.18);
+  --theme-surface: #f5f9f4;
+  --theme-hero-tint: rgba(90, 160, 111, 0.2);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-carbon-aqua {
+  --color-primary: #102a43;
+  --color-primary-nav: #123f52;
+  --color-primary-link: #138f9d;
+  --color-status-down: #138f9d;
+  --theme-accent: #20c7b5;
+  --theme-accent-soft: rgba(32, 199, 181, 0.16);
+  --theme-surface: #f3fbfb;
+  --theme-hero-tint: rgba(32, 199, 181, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+body.theme-report-neutral {
+  --color-primary: #2f3742;
+  --color-primary-nav: #4b5948;
+  --color-primary-link: #647a47;
+  --color-status-down: #647a47;
+  --theme-accent: #6f8f72;
+  --theme-accent-soft: rgba(111, 143, 114, 0.17);
+  --theme-surface: #faf9f5;
+  --theme-hero-tint: rgba(111, 143, 114, 0.18);
+  --theme-news-motif:
+    radial-gradient(ellipse 34% 52% at 84% 18%, color-mix(in srgb, var(--theme-accent) 28%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 18% 28% at 75% 9%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 24% 38% at 14% 80%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 13% 20% at 23% 70%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+  --theme-service-motif:
+    radial-gradient(ellipse 38% 56% at 16% 76%, color-mix(in srgb, var(--theme-accent) 24%, transparent) 0 42%, transparent 43%),
+    radial-gradient(ellipse 17% 26% at 27% 87%, color-mix(in srgb, var(--theme-accent) 13%, transparent) 0 46%, transparent 47%),
+    radial-gradient(ellipse 28% 42% at 86% 24%, color-mix(in srgb, var(--theme-accent) 16%, transparent) 0 44%, transparent 45%),
+    radial-gradient(ellipse 12% 18% at 77% 14%, color-mix(in srgb, var(--theme-accent) 10%, transparent) 0 44%, transparent 45%);
+}
+
+:root,
+body.theme-carbon-navy,
+body.theme-eco-emerald,
+body.theme-data-blue,
+body.theme-graphite-gold,
+body.theme-clean-teal,
+body.theme-institutional-blue,
+body.theme-climate-slate,
+body.theme-forest-graphite,
+body.theme-carbon-aqua,
+body.theme-report-neutral {
+  --theme-news-motif: url("data:image/svg+xml,%3Csvg width='1920' height='1080' viewBox='0 0 1920 1080' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(70 28) rotate(-12 360 360) scale(0.84)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(1030 36) rotate(18 360 360) scale(1.08)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(94 662) rotate(26 360 360) scale(0.48)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(1390 612) rotate(-27 360 360) scale(0.56)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3C/svg%3E");
+  --theme-service-motif: url("data:image/svg+xml,%3Csvg width='1920' height='1080' viewBox='0 0 1920 1080' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(68 90) rotate(18 360 360) scale(0.74)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(826 34) rotate(-16 360 360) scale(1.26)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(72 628) rotate(-31 360 360) scale(0.62)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3Cg transform='translate(1422 650) rotate(26 360 360) scale(0.52)'%3E%3Cpath d='M74 300C42 174 128 54 286 30C462 4 610 74 694 212C778 350 790 552 674 684C598 770 476 794 414 718C356 646 422 538 314 494C210 452 94 442 74 300Z' fill='%23000000'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  color: var(--color-text-default);
+  background: var(--theme-surface);
+}
+
+.snap-page {
+  scroll-snap-type: y mandatory;
+}
+
+.hero-section,
+.market-section,
+.content-section {
+  scroll-snap-align: start;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(21, 23, 25, 0.1);
+  color: var(--color-text-default);
+}
+
+.site-header.is-header-dark {
+  background: rgba(18, 24, 38, 0.66);
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+  color: var(--color-page);
+}
+
+.site-header .brand img {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(41%) saturate(2511%) hue-rotate(219deg) brightness(88%) contrast(96%);
+}
+
+.site-header.is-header-dark .brand img {
+  filter: none;
+}
+
+.header-inner,
+.hero-inner,
+.footer-inner,
+.market-section-inner,
+.content-section-inner,
+.service-footer-inner {
+  width: min(var(--container), calc(100% - 96px));
+}
+
+.primary-nav a {
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  padding: 10px 18px !important;
+}
+
+.join-button,
+.hero-cta,
+.market-cta,
+.content-join {
+  min-height: 44px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: none;
+}
+
+.hero-section {
+  min-height: 100svh;
+}
+
+.hero-overlay::before {
+  background:
+    linear-gradient(90deg, rgba(13, 22, 38, 0.86) 0%, rgba(13, 22, 38, 0.7) 40%, rgba(13, 22, 38, 0.2) 100%),
+    linear-gradient(180deg, rgba(13, 22, 38, 0.08) 0%, rgba(13, 22, 38, 0.22) 100%);
+}
+
+.hero-overlay::after {
+  display: none;
+}
+
+.hero-bg[data-bg="3"] {
+  background-image: url("./assets/generated-hero-backgrounds/hero-deep-green-sustainability.png");
+}
+
+.hero-bg[data-bg="4"] {
+  background-image: url("./assets/generated-hero-backgrounds/hero-blue-data-intelligence.png");
+}
+
+.hero-bg[data-bg="5"] {
+  background-image: url("./assets/generated-hero-backgrounds/hero-dark-carbon-trading.png");
+}
+
+.hero-bg[data-bg="6"] {
+  background-image: url("./assets/generated-hero-backgrounds/hero-nature-technology-fusion.png");
+}
+
+.hero-inner {
+  grid-template-columns: minmax(420px, 0.82fr) minmax(640px, 1.18fr);
+  gap: clamp(48px, 5vw, 92px);
+  padding-top: calc(var(--header-h) + 44px) !important;
+  padding-bottom: 56px;
+}
+
+.eyebrow,
+.section-kicker,
+.group-heading p {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.hero-copy h1 {
+  color: var(--color-page);
+  font-size: clamp(46px, 4vw, 68px);
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.hero-description {
+  max-width: 560px;
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+.market-menu {
+  gap: 34px;
+}
+
+.market-group {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.menu-tile {
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035)),
+    rgba(12, 24, 43, 0.22);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.13),
+    0 16px 34px rgba(5, 12, 24, 0.14);
+}
+
+.group-heading {
+  position: relative;
+  min-height: 0;
+  padding: 0 0 0 0;
+  border: 0;
+  border-color: transparent;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.group-heading::before {
+  display: none;
+}
+
+.group-heading p {
+  margin: 0 0 8px;
+  color: rgba(213, 225, 255, 0.88);
+  font-size: 12px;
+}
+
+.group-heading h2 {
+  margin: 0;
+  color: var(--color-page);
+  font-size: clamp(24px, 2.1vw, 34px);
+  line-height: 1.12;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+}
+
+.menu-grid {
+  gap: 12px;
+}
+
+.menu-tile {
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  min-height: 126px;
+  padding: 18px 12px 16px;
+  border-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.tile-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 0;
+  color: rgba(238, 246, 255, 0.96);
+  background: transparent;
+  box-shadow: none;
+}
+
+.tile-icon svg {
+  width: 58px;
+  height: 58px;
+  stroke-width: 1.5;
+}
+
+.tile-label {
+  min-height: 40px;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.32;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.26);
+}
+
+.menu-tile:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background:
+    linear-gradient(145deg, rgba(31, 85, 200, 0.38), rgba(255, 255, 255, 0.09)),
+    rgba(12, 24, 43, 0.34);
+}
+
+.indicator-dot,
+.indicator-arrow {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+}
+
+.indicator-dot:focus-visible,
+.indicator-arrow:focus-visible {
+  outline: 2px solid rgba(31, 85, 200, 0.72);
+  outline-offset: 3px;
+}
+
+.page-indicator--light .indicator-dot:focus-visible,
+.page-indicator--light .indicator-arrow:focus-visible {
+  outline-color: var(--color-primary);
+}
+
+.hero-section .page-indicator {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(5, 12, 24, 0.48);
+}
+
+.hero-section .indicator-dot {
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.hero-section .indicator-dot.is-active {
+  background: linear-gradient(90deg, #ffffff, #8fb2ff);
+  box-shadow: 0 0 14px rgba(143, 178, 255, 0.44);
+}
+
+.hero-section .indicator-arrow {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-floating-actions {
+  position: absolute;
+  right: 0;
+  bottom: clamp(20px, 3.4vh, 40px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-floating-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 800;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04)),
+    rgba(7, 18, 34, 0.34);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 18px 42px rgba(5, 12, 24, 0.22);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-floating-button--accent {
+  color: #0f1724;
+  border-color: rgba(255, 255, 255, 0.66);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(217, 228, 255, 0.86)),
+    rgba(255, 255, 255, 0.92);
+}
+
+.hero-floating-button:hover,
+.hero-floating-button:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(143, 178, 255, 0.72);
+  background: rgba(143, 178, 255, 0.16);
+  box-shadow: 0 12px 28px rgba(5, 12, 24, 0.2);
+}
+
+.hero-floating-button--accent:hover,
+.hero-floating-button--accent:focus-visible {
+  color: #0d1728;
+  background: #ffffff;
+}
+
+.hero-floating-button:active {
+  transform: translateY(0);
+}
+
+.market-section,
+.content-section {
+  min-height: 100svh;
+  background:
+    linear-gradient(rgb(255 255 255 / calc(1 - var(--theme-section-bg-opacity))), rgb(255 255 255 / calc(1 - var(--theme-section-bg-opacity)))),
+    var(--theme-surface);
+}
+
+.market-section::before,
+.content-section::before {
+  opacity: var(--theme-bg-user-opacity);
+}
+
+.news-section::before {
+  background-color: color-mix(in srgb, var(--theme-accent) 18%, #ffffff);
+  background-image: none;
+  -webkit-mask: var(--theme-news-motif) calc(50% - 150px) center / 130% 130% no-repeat;
+  mask: var(--theme-news-motif) calc(50% - 150px) center / 130% 130% no-repeat;
+}
+
+.service-section::before {
+  opacity: var(--theme-bg-user-opacity);
+  background-color: color-mix(in srgb, var(--theme-accent) 16%, #ffffff);
+  background-image: none;
+  -webkit-mask: var(--theme-service-motif) calc(50% + 150px) center / 130% 130% no-repeat;
+  mask: var(--theme-service-motif) calc(50% + 150px) center / 130% 130% no-repeat;
+}
+
+.market-section-inner,
+.content-section-inner {
+  min-height: auto !important;
+  padding-top: calc(var(--header-h) + 76px);
+  padding-bottom: 96px;
+}
+
+.market-section-inner {
+  grid-template-columns: minmax(320px, 0.66fr) minmax(680px, 1.34fr);
+  align-content: center;
+  align-items: center;
+  min-height: calc(100svh - var(--header-h)) !important;
+  padding-top: calc(var(--header-h) + 36px);
+  padding-bottom: 56px;
+}
+
+.market-intro h2,
+.section-title-block h2 {
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.market-intro h2 {
+  font-size: clamp(42px, 3.5vw, 60px);
+}
+
+.section-title-block {
+  margin-bottom: 32px;
+}
+
+.section-title-block h2 {
+  font-size: clamp(38px, 3.2vw, 52px);
+}
+
+.section-title-block > p:not(.section-kicker),
+.market-intro > p:not(.section-kicker) {
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+.market-live-strip div,
+.news-report-panel,
+.feature-news-card,
+.service-card {
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--card-shadow);
+}
+
+.market-card {
+  border-radius: var(--card-radius);
+  box-shadow: 0 22px 60px rgba(22, 39, 71, 0.14);
+}
+
+.carousel-arrow {
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(22, 39, 71, 0.12);
+}
+
+.news-layout {
+  grid-template-columns: minmax(420px, 0.86fr) minmax(560px, 1.14fr);
+  gap: 30px;
+}
+
+.news-report-panel {
+  min-height: 230px;
+  padding: 26px;
+}
+
+.news-report-tabs {
+  gap: 22px;
+}
+
+.news-report-tabs button {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.news-report-tabs a {
+  width: 32px;
+  height: 32px;
+  background: #d7dce4;
+}
+
+.feature-news-grid {
+  gap: 16px;
+}
+
+.feature-news-card {
+  border-radius: var(--card-radius);
+}
+
+.feature-media p {
+  min-height: 36px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.feature-news-card h3,
+.service-card h3 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.service-card-grid {
+  gap: 16px;
+}
+
+.service-card {
+  min-height: 410px;
+}
+
+.service-card-head {
+  min-height: 74px;
+  box-shadow: none;
+}
+
+.service-card-icon {
+  width: 48px;
+  height: 48px;
+  box-shadow: none;
+}
+
+.service-card-head h3 {
+  font-size: 23px;
+}
+
+.service-copy-track p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.62;
+}
+
+.service-footer {
+  position: relative;
+  background: #f7f9fc;
+}
+
+.theme-demo {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 1300;
+  display: none !important;
+  font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.theme-demo-toggle {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(17, 20, 24, 0.12);
+  border-radius: 999px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.34), transparent 34%),
+    linear-gradient(145deg, var(--color-primary-link), var(--color-primary));
+  box-shadow: 0 18px 44px rgba(17, 32, 56, 0.24);
+  cursor: pointer;
+}
+
+.theme-demo-toggle svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-demo-panel {
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  display: none;
+  width: 238px;
+  max-height: min(540px, 72vh);
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid rgba(17, 20, 24, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 70px rgba(17, 32, 56, 0.18);
+  backdrop-filter: blur(18px);
+}
+
+.theme-demo.is-open .theme-demo-panel {
+  display: grid;
+  gap: 8px;
+}
+
+.theme-demo-head {
+  display: grid;
+  gap: 2px;
+  padding: 2px 2px 6px;
+  color: var(--color-text-default);
+}
+
+.theme-demo-head strong {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.theme-demo-head span {
+  color: var(--color-text-muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.theme-opacity-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 7px 10px;
+  padding: 8px 9px 10px;
+  border: 1px solid rgba(17, 20, 24, 0.08);
+  border-radius: 10px;
+  background: rgba(17, 20, 24, 0.035);
+  color: var(--color-text-default);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.theme-opacity-control input {
+  grid-column: 1 / -1;
+  width: 100%;
+  accent-color: var(--theme-accent);
+}
+
+.theme-opacity-control output {
+  color: var(--color-text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.theme-option {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--color-text-default);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-option:hover,
+.theme-option:focus-visible,
+.theme-option.is-active {
+  border-color: color-mix(in srgb, var(--theme-accent) 26%, white);
+  background: var(--theme-accent-soft);
+}
+
+.theme-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--swatch-a), var(--swatch-b) 55%, var(--swatch-c));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 1280px) {
+  .header-inner,
+  .hero-inner,
+  .footer-inner,
+  .market-section-inner,
+  .content-section-inner,
+  .service-footer-inner {
+    width: calc(100% - 56px);
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-inner,
+  .market-section-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --header-h: 68px;
+  }
+
+  .header-inner,
+  .hero-inner,
+  .footer-inner,
+  .market-section-inner,
+  .content-section-inner,
+  .service-footer-inner {
+    width: calc(100% - 32px);
+  }
+
+  .hero-inner {
+    padding-top: calc(var(--header-h) + 28px) !important;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(34px, 10vw, 44px);
+  }
+
+  .market-section-inner,
+  .content-section-inner {
+    padding-top: calc(var(--header-h) + 40px);
+    padding-bottom: 56px;
+  }
+
+  .hero-floating-actions {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+
+  .hero-floating-button {
+    flex: 1 1 142px;
+    max-width: 190px;
+  }
+
+  .news-layout,
+  .feature-news-grid,
+  .service-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-demo {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .theme-demo-panel {
+    right: 0;
+    width: min(238px, calc(100vw - 32px));
+  }
+}
