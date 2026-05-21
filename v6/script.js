@@ -95,7 +95,7 @@ document.querySelectorAll("[data-market-carousel]").forEach((carousel) => {
 
   if (activeIndex < 0) activeIndex = 0;
   status.className = "carousel-status";
-  carousel.appendChild(status);
+  // carousel.appendChild(status);
 
   function renderMarketCards() {
     cards.forEach((card, index) => {
@@ -162,7 +162,7 @@ function setHeaderTheme(theme = "light") {
   sharedHeader.classList.toggle("is-header-light", !isDark);
 
   if (!sharedHeaderLogo) return;
-  sharedHeaderLogo.src = isDark ? sharedHeaderLogo.dataset.logoDark : sharedHeaderLogo.dataset.logoLight;
+  sharedHeaderLogo.src = isDark ? sharedHeaderLogo.dataset.logoLight : sharedHeaderLogo.dataset.logoDark;
 }
 
 function updateSnapIndex() {
