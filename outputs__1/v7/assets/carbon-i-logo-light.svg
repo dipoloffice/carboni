@@ -1,0 +1,13 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(40,40)">
+    <circle cx="80" cy="80" r="54" stroke="#1F6FA5" stroke-width="3" fill="none" opacity="0.95"/>
+    <ellipse cx="80" cy="80" rx="18" ry="54" stroke="#1F6FA5" stroke-width="2" fill="none" opacity="0.8"/>
+    <ellipse cx="80" cy="80" rx="36" ry="54" stroke="#1F6FA5" stroke-width="2" fill="none" opacity="0.62"/>
+    <ellipse cx="80" cy="80" rx="54" ry="18" stroke="#1F6FA5" stroke-width="2" fill="none" opacity="0.72"/>
+    <ellipse cx="80" cy="80" rx="54" ry="36" stroke="#1F6FA5" stroke-width="2" fill="none" opacity="0.54"/>
+    <path d="M80 8C110 8 128 24 138 42C118 36 98 40 82 56C68 44 56 28 54 16C60 12 68 8 80 8Z" fill="#071A2D"/>
+    <path d="M18 118C10 90 18 64 36 48C40 68 52 84 72 96C66 114 52 130 36 138C28 134 22 128 18 118Z" fill="#071A2D"/>
+    <path d="M142 118C150 90 142 64 124 48C120 68 108 84 88 96C94 114 108 130 124 138C132 134 138 128 142 118Z" fill="#071A2D"/>
+  </g>
+  <text x="240" y="145" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="110" font-weight="800" letter-spacing="2" fill="#071A2D">CARBON-i</text>
+</svg>
