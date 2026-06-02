@@ -333,6 +333,10 @@
   background: var(--color-button-inactive);
 }
 
+.news-report-stack > .news-report-panel:first-child .news-report-label {
+  flex: 0 0 85px;
+}
+
 .news-report-list a.is-highlight .news-report-label {
   color: var(--color-page);
   background: var(--color-status-down);
